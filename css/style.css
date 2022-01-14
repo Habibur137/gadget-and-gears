@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.prime-heading{
+    font-size: 52px;
+    color:#333333;
+}
+
+.sub-heading{
+    font-size: 42px;
+    text-align: center;
+    color:#333333;
+    margin-bottom: 40px;
+}
+
+.description{
+    color:#555555;
+}
+
+/* header section ================ ================= ====================== */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#222222;
+    margin-right: 20px;
+}
+
+/* banner css start ============== ========================= ================ ========================*/
+#banner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.banner-left, .banner-right{
+    width: 50%;
+}
+
+.banner-left{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-right{
+text-align: center;
+}
+
+
+.btn-regular{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    background: rgb(3, 138, 192);
+    border: 0;
+    color:#fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* collection section =================== ===================  =====================  ========================= */
+#collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.item{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.42);
+    border-radius: 10px;
+}
+
+.item img{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.price, .heading{
+    font-size: 25px;
+}
+
+.heading{
+    color:#222222;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    color:goldenrod;
+}
+
+.icons span{
+    margin-left: 10px;
+}
+
+.collection-btn-div{
+    text-align: right;
+}
+
+.collection-btn-div{
+    text-align: right;
+}
+
+.collection-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(3, 138, 192);
+}
+
+collection-btn span{
+    padding-left: 20px;
+}
+
+/* footer section ================================= */
+.footer {
+    background: #03001b;
+    color:#fff;
+    text-align: center;
+    padding: 60px;
+    margin-top: 100px;
+}
+
+.social-icon i{
+    margin-right: 6px;
+    color:#fff;
+}
+
+ /* media screen ============================================== */
+@media (max-width:660px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #banner{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .banner-left{
+        text-align: center;
+    }
+
+    #collection{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 20px;
+    }
+    .collection-btn-div{
+        text-align: center;
+    }
+}
+@media (min-width: 662px) and (max-width:992px) {
+   
+    #collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        
+    }
+    .collection-btn-div{
+        text-align: center;
+    }
+}
