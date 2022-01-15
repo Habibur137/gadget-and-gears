@@ -68,6 +68,10 @@ nav ul li a{
 
 .banner-right{
 text-align: center;
+transition: .4s;
+}
+.banner-right:hover {
+    transform: scale(1.2);
 }
 
 
@@ -144,6 +148,16 @@ collection-btn span{
     padding-left: 20px;
 }
 
+/* viewed section =============================================== */
+.viewed-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 /* footer section ================================= */
 .footer {
     background: #03001b;
@@ -182,6 +196,11 @@ collection-btn span{
     }
     .collection-btn-div{
         text-align: center;
+    }
+    .viewed-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
 }
 @media (min-width: 662px) and (max-width:992px) {
